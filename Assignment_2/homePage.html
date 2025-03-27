@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <style>
+        body {
+          margin: 0;
+          background-color: #e6f0ff;
+          font-family: sans-serif;
+        }
+
+        /* Toolbar */
+        .toolbar {
+          background-color: #f0f0f0;
+          padding: 10px;
+          display: flex;
+          height: 40px;
+          justify-content: space-between;
+          align-items: center;
+        }
+
+        .toolbar nav {
+          display: flex;
+        }
+
+        .toolbar nav a {
+          color: #333;
+          text-decoration: none;
+          padding: 0 15px;
+        }
+
+        .toolbar input[type="text"] {
+          padding: 5px;
+          border: 1px solid #ccc;
+          border-radius: 3px;
+        }
+
+        .toolbar button {
+          padding: 5px 10px;
+          border: none;
+          background-color: #333;
+          color: #fff;
+          border-radius: 3px;
+          cursor: pointer;
+        }
+
+        /* Product Container */
+        .product-container {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+        }
+
+        .product {
+          width: 250px;
+          margin: 20px;
+          border: 1px solid #ccc;
+          padding: 10px;
+          border-radius: 5px;
+          text-align: center;
+        }
+
+        .product img {
+          max-width: 100%;
+          height: auto;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .social-icons {
+            margin-top: 20px;
+        }
+
+        .social-icons a {
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+    </style>
+  </head>
+  <body>
+
+    <div class="toolbar">
+      <nav>
+        <a href="#">T-Shirt</a>
+        <a href="#">Shirt</a>
+        <a href="#">Watch</a>
+        <a href="#">Kurtta</a>
+        <a href="#">Cargo</a>
+        <a href="#">Jeans</a>
+      </nav>
+      <div>
+        <input type="text" placeholder="Search">
+        <button>Search</button>
+      </div>
+      <div>
+        <a href="#"><img src="profile-icon.png" alt="Profile" width="20"></a> 
+        <a href="#"><img src="like-icon.png" alt="Like" width="20"></a> 
+      </div>
+    </div>
+
+    <div>
+        <img src="https://www.beyoung.in/api/catalog/homepage-nov/homepage-jan25/desktop/banner/goat-sale-desktop-view_1.jpg">
+    </div>
+
+    <div class="product-container">
+      <div class="product">
+        <img src="https://www.beyoung.in/api/cache/catalog/products/new_shirt_upload_21_10_2022/olive_green_diagonal_striped_shirt_base_04_01_2024_700x933.jpg" alt="Product 1">
+        <h3>Olive Green Diagonal Striped Shirt</h3>
+        <p>₹998</p>
+      </div>
+
+      <div class="product">
+        <img src="https://www.beyoung.in/api/cache/catalog/products/plain_new_update_images_2_5_2022/white_plain_t-shirt_side_view_03_03_2023_400x533.jpg" alt="Product 2">
+        <h3>White Plain T-shirt</h3>
+        <p>₹349</p>
+      </div>
+
+      <div class="product">
+        <img src="https://delhiwatchcompany.com/cdn/shop/files/Screenshot2024-10-02at12.31.33AM_800x.png?v=1727809352" alt="Product 3">
+        <h3 style="margin-top: 50px;">DWC Devanagari: Mecaquartz Chronograph</h3>
+        <p>₹2599</p>
+      </div>
+
+      <div class="product">
+        <img src="https://delhiwatchcompany.com/cdn/shop/files/Screenshot2024-08-02at12.47.45AM_800x.png?v=1722539875" alt="Product 4">
+        <h3>DWC Vayu</h3>
+        <p>₹1000</p>
+      </div>
+
+      <div class="product">
+        <img src="https://www.beyoung.in/api/cache/catalog/products/new_shirt_upload_21_10_2022/blue_byng_printed_hoodie_base_3D_02_01_2025_700x933.jpg" alt="Product 5">
+        <h3>Blue BYNG Printed Hoodie</h3>
+        <p>₹1098</p>
+      </div>
+
+      <div class="product">
+        <img src="https://manyavar.scene7.com/is/image/manyavar/ODES1024A_373-Dusty+Pink.0106_23-04-2024-14-59:650x900" alt="Product 6">
+        <h3>Men Dusty Pink Self Patterned</h3>
+        <p>₹4999</p>
+      </div>
+
+      <div class="product">
+        <img src="https://manyavar.scene7.com/is/image/manyavar/SHOS388_315-Pink_101.38660_27-10-2024-17-11:650x900" alt="Product 7">
+        <h3>Celebratory Pink Charm Sherwani </h3>
+        <p>₹449</p>
+      </div>
+
+      <div class="product">
+        <img src="https://www.beyoung.in/api/cache/catalog/products/new_shirt_upload_21_10_2022/green_recycled_plaid_flannel_shirt_base_19_12_2024_700x933.jpg  " alt="Product 8">
+        <h3>Green Recycled Plaid Flannel Shirt</h3>
+        <p>₹999</p>
+      </div>
+
+      <div class="product">
+        <img src="https://www.beyoung.in/api/cache/catalog/products/new_chinos_update_image_23_9_2022/dark_blue_denim_cargo_pants_for_men_base_30_07_2024_700x933.jpg" alt="Product 9">
+        <h3>Dark Blue Denim Cargo Pants For Men</h3>
+        <p>₹1299</p>
+      </div>
+
+      <div class="product">
+        <img src="https://www.beyoung.in/api/cache/catalog/products/new_shirt_upload_21_10_2022/blue_denim_zipper_pocket_cargo_pants_base_20_12_2024_700x933.jpg" alt="Product 10">
+        <h3>Blue Denim Zipper Pocket Cargo Pants</h3>
+        <p>₹1499</p>
+      </div>
+
+      <div class="product">
+        <img src="https://www.beyoung.in/api/cache/catalog/products/men_new_jeans/dark_navy_blue_regular_fit_mens_jeans_zoom_in_front_28_05_2024_400x533.jpg" alt="Product 3">
+        <h3>Dark Navy Blue Regular Fit Mens Jeans</h3>
+        <p>₹998</p>
+      </div>
+
+      <div class="product">
+        <img src="https://images.bestsellerclothing.in/data/JJ/13-feb-2024/103233001_g0.jpg?width=488&height=650&mode=fill&fill=blur&format=auto" alt="Product 12">
+        <h3>Blue Check Print Blazer</h3>
+        <p>₹3199</p>
+      </div>
+
+      <div class="product">
+        <img src="https://neemans.com/cdn/shop/files/ND-TUBR-Grey_WebOptimized_b_800x.jpg?v=1735814951" alt="Product 13">
+        <h3>The Urban Riffs : Grey</h3>
+        <p>₹1899</p>
+      </div>  
+      
+      <div class="product">
+        <img src="https://neemans.com/cdn/shop/files/ND-CBL-GreenWhite-_WebOptimized_d_800x.jpg?v=1726144112" alt="Product 14">
+        <h3>Color Block Loafers : White-Green</h3>
+        <p>₹899</p>
+      </div>
+
+      <div class="product">
+        <img src="https://www.hmtwatches.in/storage/app/public/image/all_images/110724226446508.jpg" alt="Product 15">
+        <h3>Pace UGSS 101 Turquoise Blue</h3>
+        <p>₹1500</p>
+      </div>
+
+      <div class="product">
+        <img src="https://www.hmtwatches.in/storage/app/public/image/all_images/11072478735741.jpg" alt="Product 16">
+        <h3>Pace UGSL 102 Turquoise Blue</h3>
+        <p>₹1199</p>
+      </div>
+
+      <div class="product">
+        <img src="https://www.hmtwatches.in/storage/app/public/image/all_images/1107241631343622.jpg" alt="Product 17">
+        <h3>Pace UGBKBK 101 Black</h3>
+        <p>₹1500</p>
+      </div>
+
+      <div class="product">
+        <img src="https://cdn.shopify.com/s/files/1/2428/5565/files/ND-TUBR-Black_WebOptimized_b.jpg?v=1735814425&width=700" alt="Product 18">
+        <h3>The Urban Riffs : Black</h3>
+        <p>₹1899</p>
+      </div>
+
+    </div>
+
+
+    <footer>
+      <p>&copy; 2023 Fiction Shopping App. All Rights Reserved.</p>
+      <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </footer>
+
+  </body>
+</html>

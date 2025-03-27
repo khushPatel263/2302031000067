@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login Page</title>
+  <style>
+        body {
+            font-family: sans-serif;
+            background-color: #e6f0ff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .input-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .buttons button {
+            width: 400px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        .buttons a {
+            color: #007bff;
+            text-decoration: none;
+            margin-top: 5px;
+        }
+
+        .or-divider {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .or-divider span {
+            border-bottom: 1px solid #ccc;
+            padding: 0 10px;
+        }
+
+        .social-login {
+            display: flex;
+            justify-content: center;
+        }   
+
+        .social-login a {
+            margin: 0 10px;
+            margin-left: 30px;
+        }
+
+        .social-login img {
+            width: 30px;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .footer a {
+            color: #007bff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Login Page</h1>
+
+    <form>
+        <div class="input-group">
+            <label for="email">Email Id:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="input-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+
+        <div class="buttons">
+            <button type="submit">Login</button>
+        </div>
+
+        <div class="buttons">
+            <a href="#">Forgot password?</a>
+            <a href="#">I don't have account</a>
+        </div>
+
+    </form>
+
+    <div class="or-divider">
+        <span>OR</span>
+    </div>
+
+    <div class="social-login">
+        <a href="#"><img src="https://cdn4.iconfinder.com/data/icons/logos-brands-7/512/google_logo-google_icongoogle-512.png" alt="Google Login"></a>
+        <a href="#"><img src="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Facebook_colored_svg_copy-64.png" alt="Facebook Login"></a>
+        <a href="#"><img src="https://cdn4.iconfinder.com/data/icons/social-media-black-white-2/1227/X-64.png" alt="Twitter Login"></a>
+    </div>
+
+    <div class="footer">
+        <a href="#">About Us</a>
+        <a href="#">Contact Us</a>
+    </div>
+  </div>
+
+</body>
+</html>

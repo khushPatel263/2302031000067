@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #a0c4d6;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .product {
+            display: flex;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 1000px;
+        }
+        .product-images {
+            display: flex;
+            flex-direction: column;
+            margin-right: 20px;
+        }
+        .product-images img {
+            width: 100px;
+            height: auto;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+        .product-main-image img {
+            width: 300px;
+            height: auto;
+        }
+        .product-details {
+            flex: 1;
+            margin-left: 20px; /* Move product details 10px to the right */
+        }
+        .product-details h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .product-details .price {
+            font-size: 20px;
+            color: #333;
+            margin: 10px 0;
+        }
+        .product-details .color-options,
+        .product-details .size-options {
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+        }
+        .product-details .color-options span,
+        .product-details .size-options span {
+            margin-right: 10px;
+        }
+        .product-details .color-options div,
+        .product-details .size-options button {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+            border: 1px solid #ccc;
+            cursor: pointer;
+        }
+        .product-details .color-options div {
+            border-radius: 30%;
+        }
+        .product-details .color-options .red { background-color: red; }
+        .product-details .color-options .green { background-color: green; }
+        .product-details .color-options .black { background-color: black; }
+        .product-details .color-options .olive { background-color: olive; }
+        .product-details .size-options button {
+            padding: 5px 10px;
+            border-radius: 5px;
+            background-color: #f0f0f0;
+        }
+        .product-details .button-group {
+            display: flex;
+            gap: 10px;
+            margin: 20px 0;
+        }
+        .product-details .button-group button {
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            color: #fff;
+            border-radius: 30px;
+            flex: 1;
+        }
+        .product-details .button-group .add-to-cart {
+            background-color: #4CAF50;
+        }
+        .product-details .button-group .buy-now {
+            background-color: #000080;
+        }
+        .product-details .shipping-info {
+            font-size: 14px;
+            color: #666;
+            margin: 10px 0;
+        }
+        .features {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+            width: 100%;
+        }
+        .features div {
+            text-align: center;
+        }
+        .features img {
+            width: 50px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            width: 100%;
+            margin-top: 20px;
+        }
+        .social-icons {
+            margin-top: 20px;
+        }
+        .social-icons a {
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="product">
+            <div class="product-images">
+                <img src="https://www.beyoung.in/api/cache/catalog/products/new_shirt_upload_21_10_2022/olive_green_diagonal_striped_shirt_zoom_view_04_01_2024_100x133.jpg" alt="Olive Green Diagonal Striped Shirt">
+                <img src="https://www.beyoung.in/api/cache/catalog/products/new_shirt_upload_21_10_2022/olive_green_diagonal_striped_shirt_flatlay_3_100x133.jpg" alt="Olive Green Diagonal Striped Shirt">
+                <img src="https://www.beyoung.in/api/cache/catalog/products/new_shirt_upload_21_10_2022/olive_green_diagonal_striped_shirt_flatlay_1_100x133.jpg" alt="Olive Green Diagonal Striped Shirt">
+                <img src="" alt="Olive Green Diagonal Striped Shirt">
+            </div>
+            <div class="product-main-image">
+                <img src="https://www.beyoung.in/api/cache/catalog/products/new_shirt_upload_21_10_2022/olive_green_diagonal_striped_shirt_full_view_04_01_2024_700x933.jpg" alt="Olive Green Diagonal Striped Shirt">
+            </div>
+            <div class="product-details">
+                <h1>Olive Green Diagonal Striped Shirt</h1>
+                <p class="price">₹1854</p>
+                <div class="color-options">
+                    <span>Color:</span>
+                    <div class="red"></div>
+                    <div class="green"></div>
+                    <div class="black"></div>
+                    <div class="olive"></div>
+                </div>
+                <div class="size-options">
+                    <span>Size:</span>
+                    <button>S</button>
+                    <button>M</button>
+                    <button>L</button>
+                    <button>XL</button>
+                </div>
+                <div class="button-group">
+                    <button class="add-to-cart">Add to Cart</button>
+                    <button class="buy-now">Buy Now</button>
+                </div>
+                <p class="shipping-info">Free Shipping on all orders</p>
+                <p class="shipping-info">Cash on delivery Available</p>
+                <p class="shipping-info">Free Shipping on all orders</p>
+            </div>
+        </div>
+        <div class="features">
+            <div>
+                <img src="https://img.icons8.com/ios/50/000000/return-purchase.png" alt="Return">
+                <p>Genuine Product</p>
+            </div>
+            <div>
+                <img src="https://img.icons8.com/ios/50/000000/secure.png" alt="Secure">
+                <p>3M+ Happy Customers</p>
+            </div>
+            <div>
+                <img src="https://img.icons8.com/ios/50/000000/customer-support.png" alt="Support">
+                <p>Made in India</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Fiction Shopping App. All Rights Reserved.</p>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+
+</body>
+</html>

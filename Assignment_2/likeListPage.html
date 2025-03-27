@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Listings</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #a0c4d6;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        .product-item {
+            display: flex;
+            border: 1px solid #ddd;
+            padding: 15px;
+            background-color: #fff;
+        }
+        .product-item img {
+            max-width: 160px;
+            height: auto;
+            margin-right: 20px;
+        }
+        .product-details {
+            text-align: left;
+            flex: 1;
+        }
+        .product-details h3 {
+            margin: 10px 0;
+        }
+        .product-details p {
+            margin: 5px 0;
+        }
+        .product-details .price {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .button-group {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .button-group button {
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            color: #fff;
+            width: 100%;
+        }
+        .button-group .add-to-cart {
+            background-color: #4CAF50;
+            border-radius: 30px;
+        }
+        .button-group .buy-now {
+            background-color: #000080;
+            border-radius: 30px;
+        }
+        
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .social-icons {
+            margin-top: 20px;
+        }
+
+        .social-icons a {
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="product-grid">
+        <div class="product-item">
+            <img src="https://www.beyoung.in/api/cache/catalog/products/new_shirt_upload_21_10_2022/olive_green_diagonal_striped_shirt_full_view_04_01_2024_700x933.jpg" alt="Olive Green Diagonal Striped Shirt">
+            <div class="product-details">
+                <h3>Olive Green Diagonal Striped Shirt</h3>
+                <p>Size: s</p>
+                <p class="price">₹1854</p>
+                <div class="button-group">
+                    <button class="add-to-cart">Add to cart</button>    
+                    <button class="buy-now">Buy now</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-item">
+            <img src="https://delhiwatchcompany.com/cdn/shop/files/Screenshot2024-10-02at12.31.33AM_400x.png?v=1727809352" alt="DWC Devanagari Mecaquartz Chronograph">
+            <div class="product-details">
+                <h3>DWC Devanagari Mecaquartz Chronograph</h3>
+                <p class="price">₹2599</p>
+                <div class="button-group">
+                    <button class="add-to-cart">Add to cart</button>
+                    <button class="buy-now">Buy now</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-item">
+            <img src="https://www.beyoung.in/api/cache/catalog/products/plain_new_update_images_2_5_2022/white_plain_t-shirt_base_22_10_2024_700x933.jpg" alt="White Plain T-shirt">
+            <div class="product-details">
+                <h3>White Plain T-shirt</h3>
+                <p>Size: M</p>
+                <p class="price">₹349</p>
+                <div class="button-group">
+                    <button class="add-to-cart">Add to cart</button>
+                    <button class="buy-now">Buy now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
